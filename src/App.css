@@ -70,6 +70,7 @@
   background: transparent;
   border: none;
   cursor: pointer;
+  color: #000;
 }
 
 .hover-widget-box-message {
@@ -131,6 +132,7 @@
   height: 100%;
   background: var(--hover-widget-primary-color);
   cursor: pointer;
+  color: #000;
 }
 
 .hover-widget-chat-message {
