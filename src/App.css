@@ -16,7 +16,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFF;
 
 }
 
@@ -31,11 +30,10 @@
   bottom: 0px;
   right: 0px;
   margin: 30px;
-  padding: 2px;
-  width: 20vw;
-  min-width: 330px;
+  width: 80%;
+  max-width: 600px;
   border: 2px solid #a8c0ff;
-  border-radius: 5px;
+  border-radius: 15px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -46,27 +44,32 @@
 
 .hover-widget-box-header {
   background: var(--hover-widget-primary-color);
-  border-bottom: 2px solid #FFF;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 5px 5px 0 0;
-  padding: 5px 2px;
+  padding: 8px 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
 }
-.hover-widget-box-header span {
+
+.hover-widget-box-header div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.hover-widget-box-header div>span {
   font-size: 20px;
   font-weight: 600;
-  padding: 5px 15px;
-  color: #FFF;
 }
 
 .hover-widget-box-header button {
   background: transparent;
   border: none;
   cursor: pointer;
-  color: #FFF;
 }
 
 .hover-widget-box-message {
@@ -101,13 +104,10 @@
 
 .hover-widget-box-input {
   border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
   display: flex;
-  height: 40px;
-  -webkit-box-shadow: 0px 0px 6px var(--hover-widget-primary-color);
-  -moz-box-shadow: 0px 0px 6px var(--hover-widget-primary-color);
-  box-shadow: 0px 0px 6px var(--hover-widget-primary-color);
-  /* border-top: 2px solid var(--hover-widget-primary-color); */
-
+  height: 60px;
+  padding: 5px 15px;
 }
 
 .hover-widget-box-input textarea {
@@ -130,8 +130,23 @@
   border: none;
   height: 100%;
   background: var(--hover-widget-primary-color);
-  color: #FFF;
   cursor: pointer;
+}
+
+.hover-widget-chat-message {
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  margin: 0px 0px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 5px 15px;
+
+}
+
+.hover-widget-chat-message span {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .hover-widget-user-message {
@@ -151,7 +166,7 @@
   border-radius: 50%;
   padding: 5px;
   border: 1px solid black;
-  
+
 }
 
 .hover-widget-bot-message {
@@ -159,16 +174,19 @@
   color: #000;
   background: #FFF;
   padding: 10px;
-  border-radius: 10px 10px 10px 0px;;
+  border-radius: 10px 10px 10px 0px;
+  ;
   max-width: 70%;
   min-width: 30%;
   float: left;
   word-wrap: break-word;
   margin-left: 10px;
 }
-.hover-widget-bouncing-loader{
+
+.hover-widget-bouncing-loader {
   box-shadow: none !important;
 }
+
 .hover-widget-bouncing-loader>div {
   width: 13px;
   height: 13px;
