@@ -9,6 +9,6 @@ document.body.appendChild(domElement)
 const root = ReactDOM.createRoot(domElement);
 root.render(
   <React.StrictMode>
-    <App product="ISL81801" />
+    <App product="hover" />
   </React.StrictMode>
 );
