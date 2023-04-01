@@ -96,7 +96,7 @@ const HoverBox = ({ data, setData, onClick, product }) => {
         <div ref={messageRef} />
       </div>
       <div className="hover-widget-box-input">
-        <BotIcon />
+        <UserIcon />
         <textarea onKeyUp={(e) => handler(e)} placeholder="Type your message here ... " ref={inputRef} value={message} onChange={(e) => setMessage(e.target.value)} wrap="hard"></textarea>
         <button onClick={() => getBotResponse()} disabled={loader}><Send /></button>
       </div>
