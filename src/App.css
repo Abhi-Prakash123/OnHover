@@ -74,8 +74,7 @@
 }
 
 .hover-widget-box-message {
-  height: 60vh;
-  max-height: 550px;
+  height: 65vh;
   border-bottom: none;
   display: flex;
   flex-direction: column;

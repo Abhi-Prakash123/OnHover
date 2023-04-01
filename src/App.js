@@ -106,7 +106,7 @@ const HoverBox = ({ data, setData, onClick, product }) => {
 
 function App({ product }) {
   const [showMessage, setShowMessage] = React.useState(false);
-  const [chatData, setChatData] = React.useState([])
+  const [chatData, setChatData] = React.useState([{ type: 'bot', message: "Welcome to Hover AI chatbot, designed with our unique cognitive architecture to provide human-like responses. If you have any questions about our advanced AI solutions or want to know about our startup,  just type your message below, and let's get started! " }])
 
   const defaultState = {
     opacity: 0,
