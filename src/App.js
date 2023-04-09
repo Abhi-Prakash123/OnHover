@@ -69,7 +69,7 @@ const HoverBox = ({ data, setData, onClick, product }) => {
     animateMessageRef.current.innerHTML = ''
     for await (let i of msg) {
       animateMessageRef.current.innerHTML += i; 
-      await new Promise(r => setTimeout(r, 100));
+      await new Promise(r => setTimeout(r, 50));
     }
     setLoader(false)
     setData((prev) => [...prev, { type: 'bot', message: msg }])
